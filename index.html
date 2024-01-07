@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MintLegals - NFT Legal Contracts</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #343a40; /* Dark mode background color */
+            color: #ffffff; /* Dark mode text color */
+        }
+
+        .navbar {
+            background-color: #212529; /* Dark mode navbar background color */
+            width: 100%;
+        }
+
+        .jumbotron {
+            background-color: #212529; /* Dark mode jumbotron background color */
+            padding: 80px 20px;
+            width: 100%;
+        }
+
+        .about-container,
+        .pricing-container,
+        .upload-form-container,
+        .footer {
+            margin-top: 50px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .card-header {
+            background-color: #343a40; /* Dark mode card header background color */
+            border: none;
+            font-weight: bold;
+            color: #ffffff; /* Dark mode card header text color */
+        }
+
+        .card-body {
+            color: #000000; /* Dark mode pricing card text color */
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Dark mode specific styles for the upload form */
+        .upload-form-container {
+            background-color: #343a40; /* Dark mode form background color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .upload-form-container form {
+            width: 100%;
+        }
+
+        .upload-form-container label,
+        .upload-form-container button {
+            color: #ffffff; /* Dark mode text color for form labels and buttons */
+        }
+
+        /* Styling for dark mode file input */
+        .upload-form-container input[type="file"] {
+            color: #ffffff;
+            background-color: #343a40;
+            border: 1px solid #6c757d; /* Dark mode border color */
+        }
+
+        /* Styling for the footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><i class="ri-draft-line" height="30px"></i> MintLegals</a>
+    <button class="btn btn-primary ml-auto">Connect Metamask Wallet</button>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center">
+    <h1 class="display-4">Mint Your Legal Contracts as NFTs</h1>
+    <p class="lead">Secure, Transparent, and Verifiable</p>
+    <a class="btn btn-primary btn-lg" href="#pricing" role="button">Get Started</a>
+</div>
+
+<!-- About Section -->
+<div class="container about-container">
+    <h2 class="text-center">About MintLegals</h2>
+    <p class="text-center">MintLegals is a revolutionary platform that allows you to mint your legal contracts as non-fungible tokens (NFTs) on the blockchain. Our service ensures the security, transparency, and verifiability of your important legal documents. Join us in the future of legal contracts!</p>
+</div>
+
+<!-- Pricing Plan Section -->
+<div class="container pricing-container" id="pricing">
+    <h2 class="text-center">Pricing Plans</h2>
+    <div class="row">
+        <!-- Basic Plan -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Basic Plan</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$19.99<small class="text-muted">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 Contracts/Month</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro Plan</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$39.99<small class="text-muted">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Unlimited Contracts</li>
+                        <li>Priority Email Support</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contract Upload Form Section -->
+<div class="container upload-form-container">
+    <h2 class="text-center">Upload Your Contract</h2>
+    <form>
+        <div class="form-group">
+            <label for="contractFile">Select your contract file:</label>
+            <input type="file" class="form-control-file" id="contractFile" accept=".pdf, .doc, .docx">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Upload Contract</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<div class="container footer">
+    <a href="#">Back to Top</a>
+    <p>&copy; 2024 MintLegals</p>
+</div>
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
